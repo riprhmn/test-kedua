@@ -31,13 +31,14 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,18 +122,31 @@
               ]
             },
             "id": "577d666f-d8e7-4826-9fbe-bc14058a3954",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Customer",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": [],
+              "threats": [
+                {
+                  "id": "9391cdb1-309f-4237-8440-d3b22f5623e6",
+                  "title": "Unauthorized Customer Access",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Penyerang dapat berpura-pura menjadi pelanggan untuk melakukan pesanan palsu atau mengakses informasi pesanan orang lain.",
+                  "mitigation": "- Menggunakan autentikasi dua faktor (2FA) untuk proses login pelanggan.\n- Memverifikasi identitas pengguna melalui email atau SMS sebelum memproses pesanan.\n- Membatasi jumlah percobaan login untuk mencegah serangan brute force.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "repudiation": 0
               }
             }
@@ -158,6 +172,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +256,6 @@
               ]
             },
             "id": "bc5f3b12-919a-486a-b1b8-7123348af97f",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Sistem E-Commerce",
@@ -274,6 +288,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -357,7 +372,6 @@
               ]
             },
             "id": "9ae26f91-0859-4170-b62c-a6e79b8bcc5e",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "Bank",
@@ -390,6 +404,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -473,7 +488,6 @@
               ]
             },
             "id": "82a6b640-0948-424e-8c0d-0451efb2679a",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Pemesanan\n Produk ",
@@ -536,6 +550,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -619,7 +634,6 @@
               ]
             },
             "id": "24112805-bad1-4b0e-9eb9-46747c95d68a",
-            "zIndex": 5,
             "data": {
               "type": "tm.Store",
               "name": "Database Transaksi",
@@ -676,6 +690,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -759,7 +774,6 @@
               ]
             },
             "id": "c5cb2546-b5fc-43fe-aeac-07813d4de1c6",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "Proses \nPembayaran",
@@ -795,6 +809,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -878,7 +893,6 @@
               ]
             },
             "id": "a8ff2345-d211-4a14-9e80-b4c91124163b",
-            "zIndex": 7,
             "data": {
               "type": "tm.Process",
               "name": "Status\nPesanan",
@@ -917,6 +931,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -1000,7 +1015,6 @@
               ]
             },
             "id": "fd1e175f-fd63-41cf-93c8-eaec78f81542",
-            "zIndex": 8,
             "data": {
               "type": "tm.Store",
               "name": "Database Validasi Pembayaran",
@@ -1040,6 +1054,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -1123,7 +1138,6 @@
               ]
             },
             "id": "d361e92e-71bc-4ae6-8a99-5d3fa5b74815",
-            "zIndex": 9,
             "data": {
               "type": "tm.Store",
               "name": "Database Pesanan",
@@ -1163,6 +1177,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1246,7 +1261,6 @@
               ]
             },
             "id": "aeaf9706-abd4-4c02-8c03-fa9dc3913648",
-            "zIndex": 10,
             "data": {
               "type": "tm.Store",
               "name": "Database Produk ",
@@ -2287,6 +2301,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -2370,7 +2385,6 @@
               ]
             },
             "id": "01d70306-9e34-4183-9169-6e4ad3767d10",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "Validasi \nPembayaran",
@@ -2507,6 +2521,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Cybersecurity Architect 2",
-    "threatTop": 8
+    "threatTop": 9
   }
 }
