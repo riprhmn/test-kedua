@@ -1,0 +1,27 @@
+{
+  "version": "2.4.1",
+  "summary": {
+    "title": "Sistem Pembayaran pada Pembelian di Online Shop",
+    "owner": "Blacklight",
+    "description": "Sebuah platform e-commerce yang menyediakan layanan pembayaran online untuk user. Pemodelan ini berfokus pada identifikasi ancaman dan kerentanan dalam proses transaksi pembayaran online.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Pembayaran Online Shop",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.4.1",
+        "cells": [],
+        "description": "Pembayaran Online Shop STRIDE"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Cybersecurity Architect 2",
+    "threatTop": 0
+  }
+}
