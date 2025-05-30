@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeBootcamp - Jalani Perjalanan Codingmu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#3b82f6'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <i class="fas fa-code text-white text-xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-gray-800">CodeBootcamp</span>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#programs" class="text-gray-600 hover:text-primary transition-colors">Program</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-primary transition-colors">Testimoni</a>
+                    <a href="#faq" class="text-gray-600 hover:text-primary transition-colors">FAQ</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Kontak</a>
+                </div>
+                
+                <div class="flex items-center space-x-4">
+                    <button class="hidden md:block text-primary hover:text-secondary transition-colors">Masuk</button>
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary transition-colors">
+                        Daftar Gratis
+                    </button>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-6xl font-bold text-gray-800 mb-6 leading-tight">
+                        Jalani Perjalanan <span class="text-primary">Codingmu</span> Bersama Bootcamp Terbaik
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Belajar dari mentor berpengalaman, ikuti kurikulum intensif, dan raih karier impianmu di bidang teknologi.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                        <button class="bg-primary text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-secondary transition-colors shadow-lg">
+                            <i class="fas fa-rocket mr-2"></i>
+                            Mulai Sekarang
+                        </button>
+                        <button class="border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-white transition-colors">
+                            <i class="fas fa-play mr-2"></i>
+                            Lihat Program
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-white rounded-2xl shadow-2xl p-8 transform rotate-3 hover:rotate-0 transition-transform duration-300">
+                        <div class="bg-gray-100 rounded-lg p-6">
+                            <div class="flex items-center space-x-2 mb-4">
+                                <div class="w-3 h-3 bg-red-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
+                                <div class="w-3 h-3 bg-green-500 rounded-full"></div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="h-4 bg-blue-200 rounded w-3/4"></div>
+                                <div class="h-4 bg-green-200 rounded w-1/2"></div>
+                                <div class="h-4 bg-purple-200 rounded w-2/3"></div>
+                                <div class="h-4 bg-yellow-200 rounded w-1/3"></div>
+                            </div>
+                        </div>
+                        <div class="mt-4 text-center">
+                            <i class="fas fa-laptop-code text-4xl text-primary mb-2"></i>
+                            <p class="text-gray-600 font-medium">Coding Environment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Mengapa Memilih CodeBootcamp?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Kami menyediakan pengalaman belajar yang komprehensif untuk mempersiapkan Anda menjadi developer profesional
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center group">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
+                        <i class="fas fa-chalkboard-teacher text-3xl text-primary group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Mentor Ahli</h3>
+                    <p class="text-gray-600">Belajar langsung dari mentor berpengalaman dengan track record di perusahaan teknologi terkemuka</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
+                        <i class="fas fa-industry text-3xl text-green-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Kurikulum Industri</h3>
+                    <p class="text-gray-600">Kurikulum yang disesuaikan dengan kebutuhan industri dan teknologi terkini</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
+                        <i class="fas fa-project-diagram text-3xl text-purple-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Proyek Nyata</h3>
+                    <p class="text-gray-600">Kerjakan proyek nyata yang dapat menjadi portfolio untuk melamar pekerjaan</p>
+                </div>
+                
+                <div class="text-center group">
+                    <div class="bg-yellow-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors">
+                        <i class="fas fa-certificate text-3xl text-yellow-600 group-hover:text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Sertifikat Resmi</h3>
+                    <p class="text-gray-600">Dapatkan sertifikat yang diakui industri setelah menyelesaikan program bootcamp</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Program Bootcamp</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Pilih program yang sesuai dengan minat dan tujuan karier Anda
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fab fa-react text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Frontend Development</h3>
+                        <p class="text-gray-600 mb-6">Pelajari HTML, CSS, JavaScript, React, dan teknologi frontend modern lainnya</p>
+                        <ul class="text-left text-gray-600 mb-8 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>HTML & CSS</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>JavaScript ES6+</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>React & Next.js</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Tailwind CSS</li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition-colors">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-center">
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-server text-3xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Backend Development</h3>
+                        <p class="text-gray-600 mb-6">Kuasai Node.js, Python, database, dan arsitektur sistem backend</p>
+                        <ul class="text-left text-gray-600 mb-8 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Node.js & Express</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Python & Django</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Database & SQL</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>API Development</li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition-colors">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border-2 border-primary relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-primary text-white px-4 py-1 rounded-full text-sm font-semibold">Populer</span>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-layer-group text-3xl text-purple-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Fullstack Development</h3>
+                        <p class="text-gray-600 mb-6">Kombinasi frontend dan backend untuk menjadi developer yang lengkap</p>
+                        <ul class="text-left text-gray-600 mb-8 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Frontend + Backend</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Database Design</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>DevOps Basics</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Project Management</li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition-colors">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow">
+                    <div class="text-center">
+                        <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-palette text-3xl text-pink-600"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">UI/UX Design</h3>
+                        <p class="text-gray-600 mb-6">Pelajari desain antarmuka dan pengalaman pengguna yang menarik</p>
+                        <ul class="text-left text-gray-600 mb-8 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Design Thinking</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Figma & Adobe XD</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>User Research</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>Prototyping</li>
+                        </ul>
+                        <button class="w-full bg-primary text-white py-3 rounded-lg hover:bg-secondary transition-colors">
+                            Lihat Detail
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Testimoni Alumni</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Dengar langsung dari alumni yang telah berhasil berkarier di bidang teknologi
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Alumni" class="w-15 h-15 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Wijaya</h4>
+                            <p class="text-gray-600">Frontend Developer di Tokopedia</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "CodeBootcamp benar-benar mengubah hidup saya. Dari yang tidak tahu coding sama sekali, sekarang saya bekerja di perusahaan teknologi impian. Mentornya sangat supportif!"
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Alumni" class="w-15 h-15 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Ahmad Rizki</h4>
+                            <p class="text-gray-600">Fullstack Developer di Gojek</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Program fullstack di CodeBootcamp sangat komprehensif. Saya belajar dari dasar hingga advanced, dan sekarang confident untuk handle project besar di perusahaan."
+                    </p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-6">
+                        <img src="/placeholder.svg?height=60&width=60" alt="Alumni" class="w-15 h-15 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Maya Sari</h4>
+                            <p class="text-gray-600">UI/UX Designer di Bukalapak</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400 mb-2">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        "Sebagai career changer, saya merasa terbantu sekali dengan kurikulum yang terstruktur dan mentor yang berpengalaman. Sekarang saya bekerja sebagai UI/UX Designer!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">Pertanyaan Umum</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Temukan jawaban untuk pertanyaan yang sering ditanyakan
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Berapa lama durasi program bootcamp?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-6">
+                        <p class="text-gray-600">Program bootcamp kami berlangsung selama 12-16 minggu dengan intensitas belajar 40 jam per minggu. Tersedia juga program part-time dengan durasi 24 minggu.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Apakah ada persyaratan khusus untuk mendaftar?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-6">
+                        <p class="text-gray-600">Tidak ada persyaratan khusus. Program kami dirancang untuk pemula hingga intermediate. Yang terpenting adalah komitmen dan motivasi untuk belajar intensif.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Bagaimana sistem pembelajaran di CodeBootcamp?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-6">
+                        <p class="text-gray-600">Kami menggunakan metode pembelajaran blended learning dengan kombinasi live session, hands-on project, mentoring 1-on-1, dan peer learning dalam kelompok kecil.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Apakah ada jaminan kerja setelah lulus?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-6">
+                        <p class="text-gray-600">Kami menyediakan career support berupa job placement assistance, interview preparation, dan akses ke network perusahaan partner. 85% alumni kami mendapat pekerjaan dalam 6 bulan.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-sm">
+                    <button class="w-full text-left p-6 focus:outline-none" onclick="toggleFAQ(this)">
+                        <div class="flex justify-between items-center">
+                            <h3 class="text-xl font-semibold text-gray-800">Berapa biaya program bootcamp?</h3>
+                            <i class="fas fa-chevron-down text-gray-400 transform transition-transform"></i>
+                        </div>
+                    </button>
+                    <div class="hidden px-6 pb-6">
+                        <p class="text-gray-600">Biaya program mulai dari Rp 15 juta dengan berbagai pilihan pembayaran termasuk cicilan 0% dan Income Share Agreement (ISA). Hubungi tim kami untuk konsultasi biaya.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold text-white mb-6">Siap Mulai Karier di Dunia Teknologi?</h2>
+            <p class="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                Bergabunglah dengan ribuan alumni yang telah berhasil berkarier di perusahaan teknologi terkemuka
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors shadow-lg">
+                    <i class="fas fa-rocket mr-2"></i>
+                    Daftar Sekarang
+                </button>
+                <button class="border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-primary transition-colors">
+                    <i class="fas fa-phone mr-2"></i>
+                    Konsultasi Gratis
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <i class="fas fa-code text-white text-xl"></i>
+                        </div>
+                        <span class="text-2xl font-bold">CodeBootcamp</span>
+                    </div>
+                    <p class="text-gray-400 mb-6">
+                        Mempersiapkan talenta teknologi terbaik untuk masa depan digital Indonesia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Program</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Frontend Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Backend Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Fullstack Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">UI/UX Design</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Perusahaan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Tentang Kami</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Karier</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Partnership</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xl font-bold mb-6">Kontak</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-envelope mr-3"></i>
+                            info@codebootcamp.id
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-phone mr-3"></i>
+                            +62 21 1234 5678
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i class="fas fa-map-marker-alt mr-3"></i>
+                            Jakarta, Indonesia
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center">
+                <p class="text-gray-400">
+                    &copy; 2024 CodeBootcamp. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleFAQ(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.classList.add('hidden');
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
